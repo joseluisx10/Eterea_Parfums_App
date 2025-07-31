@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="8dp"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgFotoCarrito"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_background" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingStart="8dp">
+
+            <TextView
+                android:id="@+id/txtNombreCarrito"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre del Perfume"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txtPrecioCarrito"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$0.00"
+                android:textSize="12sp"
+                android:textColor="#FF5722"
+                android:paddingTop="4dp" />
+
+            <!-- Sección de cantidad con ImageButtons -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingTop="4dp">
+
+                <ImageButton
+                    android:id="@+id/btnRestarCantidad"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:background="@color/beige"
+                    android:src="@drawable/remove"
+                    android:contentDescription="Restar cantidad"
+                    />
+
+                <TextView
+                    android:id="@+id/txtCantidadCarrito"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:textSize="12sp" />
+
+                <ImageButton
+                    android:id="@+id/btnSumarCantidad"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:background="@color/beige"
+                    android:src="@drawable/add"
+                    android:contentDescription="Sumar cantidad"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Botón para eliminar del carrito (se mantiene como en el diseño original) -->
+        <Button
+            android:id="@+id/btnEliminarCarrito"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Eliminar"
+            android:layout_gravity="center_vertical"
+            android:backgroundTint="#e74c3c"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

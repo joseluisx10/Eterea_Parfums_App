@@ -1,0 +1,50 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <!-- Nuevo ítem Home -->
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="Inicio" />
+
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_profile"
+            android:title="Perfil" />
+        <item
+            android:id="@+id/nav_purchases"
+            android:icon="@drawable/ic_purchase"
+            android:title="Mis Compras" />
+        <item
+            android:id="@+id/nav_perfumes"
+            android:icon="@drawable/ic_perfume"
+            android:title="Perfumes" />
+        <item
+            android:id="@+id/nav_promotions"
+            android:icon="@drawable/ic_promotion"
+            android:title="Promociones" />
+        <item
+            android:id="@+id/nav_branches"
+            android:icon="@drawable/ic_branches"
+            android:title="Sucursales" />
+        <item
+            android:id="@+id/nav_faq"
+            android:icon="@drawable/ic_faq"
+            android:title="Preguntas Frecuentes" />
+        <item
+            android:id="@+id/nav_scan"
+            android:icon="@drawable/icon_barra"
+            android:title="Escanear código" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_about"
+            android:title="Acerca de Nosotros" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_logout"
+            android:title="Cerrar Sesión" />
+        <item
+            android:id="@+id/nav_login"
+            android:icon="@drawable/ic_login"
+            android:title="Iniciar Sesión" />
+    </group>
+</menu>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- item_carousel.xml -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/itemCarouselRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Imagen que representa el perfume (ajusta según necesites) -->
+    <ImageView
+        android:id="@+id/imgCarousel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_placeholder" />
+
+</FrameLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="595dp"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Título -->
+        <TextView
+            android:id="@+id/inv_tvTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Factura"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Resumen -->
+        <TextView
+            android:id="@+id/inv_tvSubtotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subtotal:"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/inv_tvDescuento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Descuento:"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/inv_tvRecargo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recargo:"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/inv_tvTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total:"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Encabezado detalle -->
+        <TextView
+            android:id="@+id/inv_tvDetalleHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Detalle de Ítems"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Lista de ítems -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/inv_rvItems"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"/>
+    </LinearLayout>
+</ScrollView>

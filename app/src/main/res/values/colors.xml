@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="beige">#EBDBDB</color>
+    <color name="light_gray">#CECECE</color>
+    <color name="beige_claro">#D1BFB1</color>
+    <color name="teal_700">#838383</color>
+    <color name="precios">#FF5722</color>
+
+
+
+</resources>
