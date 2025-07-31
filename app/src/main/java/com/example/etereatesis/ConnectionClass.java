@@ -13,10 +13,10 @@ import javax.security.auth.callback.Callback;
 
 public class ConnectionClass {
     // Datos de conexión
-    private static final String IP = "192.168.56.1";
+    private static final String IP = "";
     private static final String PORT = "1433";
     private static final String DB = "eterea";
-    private static final String USER = "JLUIS\\MSSQLSERVER2025";
+    private static final String USER = "";
     private static final String PASSWORD = "12345";
 
     // Método para obtener la conexión con SQL Server
